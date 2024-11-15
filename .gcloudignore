@@ -1,0 +1,12 @@
+.git
+.gitignore
+.gcloudignore
+package.json
+package-lock.json
+node_modules
+src
+public
+.env
+.env.*
+scripts
+landingpage

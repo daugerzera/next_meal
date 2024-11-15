@@ -1,20 +1,26 @@
 {
-  "name": "next_meal",
+  "name": "foodies",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prepare": "node scripts/prepare-deploy.js",
+    "deploy": "node scripts/deploy.js",
+    "deploy-default": "npm run prepare default && npm run build && npm run deploy"
   },
   "dependencies": {
+    "better-sqlite3": "^11.3.0",
+    "next": "14.0.3",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.15"
+    "slugify": "^1.6.6",
+    "xss": "^1.0.15"
   },
   "devDependencies": {
     "eslint": "^8",
-    "eslint-config-next": "14.2.15"
+    "eslint-config-next": "14.0.3"
   }
 }
