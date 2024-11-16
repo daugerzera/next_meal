@@ -1,7 +1,0 @@
-service: default
-env: flex
-runtime: nodejs18
-handlers:
-  - url: /.*
-    secure: always
-    script: auto
