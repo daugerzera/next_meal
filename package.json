@@ -5,11 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "prepare": "node scripts/prepare-deploy.js",
-    "deploy": "node scripts/deploy.js",
-    "deploy-default": "npm run prepare default && npm run build && npm run deploy"
+    "start": "next start -p 8080",
+    "lint": "next lint"
   },
   "dependencies": {
     "better-sqlite3": "^11.3.0",
@@ -24,3 +21,4 @@
     "eslint-config-next": "14.0.3"
   }
 }
+  
